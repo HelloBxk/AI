@@ -17,11 +17,6 @@ public:
 	char* name();
 	char* sex();
 
-	/* 器官之间的数据传递 */
-	int passToEar(MessageListener *listener, int value);
-	int passToBrain(MessageListener *listener, int value);
-	int passToMouth(MessageListener *listener, int value);
-
 private:
 	
 };

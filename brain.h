@@ -17,6 +17,10 @@ public:
 
 private:
 	static Brain *instance;
+
+	// 大脑拥有记忆(使用一种数据结构保存记忆)
+
+	// 大脑可以思考
 };
 
 #endif //_BRAIN_

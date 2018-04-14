@@ -19,15 +19,3 @@ char* Lili::name() {
 char* Lili::sex() {
 	return SEX;
 }
-
-int Lili::passToBrain(MessageListener *listener, int value) {
-	return listener->onMessage(value);
-}
-
-int Lili::passToEar(MessageListener *listener, int value) {
-	return listener->onMessage(value);
-}
-
-int Lili::passToMouth(MessageListener *listener, int value) {
-	return listener->onMessage(value);
-}
