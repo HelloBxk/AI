@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="boot.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="lili.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -28,6 +25,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="mouth.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="memory.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,6 +45,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="message.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="memory.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -78,16 +78,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="boot.cpp" />
     <ClCompile Include="brain.cpp" />
     <ClCompile Include="ear.cpp" />
     <ClCompile Include="lili.cpp" />
+    <ClCompile Include="memory.cpp" />
     <ClCompile Include="mouth.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="brain.h" />
     <ClInclude Include="ear.h" />
     <ClInclude Include="lili.h" />
+    <ClInclude Include="memory.h" />
     <ClInclude Include="message.h" />
     <ClInclude Include="mouth.h" />
   </ItemGroup>

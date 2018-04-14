@@ -5,6 +5,8 @@
 #include "ear.h"
 #include "mouth.h"
 #include "message.h"
+#include "memory.h"
+
 #include <iostream>
 
 using namespace std;

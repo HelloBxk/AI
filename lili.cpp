@@ -19,3 +19,22 @@ char* Lili::name() {
 char* Lili::sex() {
 	return SEX;
 }
+
+int main(void) {
+
+	Lili li;
+
+	cout << li.name() << endl;
+	cout << li.sex() << endl;
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(12);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(1);
+
+	//打印记忆
+	Memory::getInstance()->print();
+
+	return 0;
+}
