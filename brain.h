@@ -3,6 +3,13 @@
 
 #include <iostream>
 #include "message.h"
+
+// 神经元
+typedef struct BEURON {
+	int **input; //多个输入
+	int output; //一个输出
+} BEURON;
+
 // 大脑
 class Brain : MessageListener {
 public:
@@ -13,6 +20,7 @@ public:
 
 	static Brain *getInstance();
 
+	// 大脑会因为一个外部的刺激而产生一个想法
 	void idea(int value);
 
 private:

@@ -22,9 +22,14 @@ char *Brain::name() {
 }
 
 void Brain::idea(int value) {
-	if (Memory::getInstance()->search(value)->entity == value) {
-		cout << "我记得我见着他 - " << value << endl;
+	MEMORY_NODE *node = Memory::getInstance()->search(value);
+	if (node == NULL) {
+		cout << "这是我第一次有这个想法 - " << value << endl;
 	}
+	else {
+		cout << "我以前有过这个想法 - " << node->entity << endl;
+	}
+
 	Memory::getInstance()->save(value);
 	cout << "大脑产生了一个想法 - " << value << endl;
 	cout << "嘴巴返回给大脑的值 - " << Ear::getInstance()->onMessage(value) << endl;
@@ -32,8 +37,12 @@ void Brain::idea(int value) {
 
 // 消息接收器
 int Brain::onMessage(int value) {
-	if (Memory::getInstance()->search(value)->entity == value) {
-		cout << "我记得我见着他 - " << value << endl;
+	MEMORY_NODE *node = Memory::getInstance()->search(value);
+	if (node == NULL) {
+		cout << "我第一次接收到 - " << value << endl;
+	}
+	else {
+		cout << "我以前接收过 - " << node->entity << endl;
 	}
 	Memory::getInstance()->save(value);
 	return value + 1;

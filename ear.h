@@ -6,8 +6,6 @@
 
 class Ear : MessageListener {
 public:
-	Ear();
-	~Ear();
 	char *name();
 	virtual int onMessage(int value);
 
@@ -17,6 +15,8 @@ public:
 	static Ear *getInstance();
 
 private:
+	Ear();
+	~Ear();
 	static Ear *instance;
 };
 

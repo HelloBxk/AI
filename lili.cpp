@@ -12,6 +12,7 @@ Lili::Lili() {}
 
 Lili::~Lili() {}
 
+
 char* Lili::name() {
 	return NAME;
 }
@@ -32,6 +33,36 @@ int main(void) {
 
 	//耳朵听到了一个声音
 	Ear::getInstance()->listener(1);
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(12);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(1);
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(12);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(1);
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(12);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(1);
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(2);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(10);
+
+	//大脑产生了一个idea
+	Brain::getInstance()->idea(1);
+
+	//耳朵听到了一个声音
+	Ear::getInstance()->listener(10);
 
 	//打印记忆
 	Memory::getInstance()->print();
