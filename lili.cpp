@@ -1,4 +1,7 @@
 #include "lili.h"
+#include <cstdlib>
+#include <ctime>
+#include <windows.h>
 
 #define NAME "lili"
 #define SEX  "girl"
@@ -28,41 +31,14 @@ int main(void) {
 	cout << li.name() << endl;
 	cout << li.sex() << endl;
 
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(12);
+	int c = 0;
 
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(1);
-
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(12);
-
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(1);
-
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(12);
-
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(1);
-
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(12);
-
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(1);
-
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(2);
-
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(10);
-
-	//大脑产生了一个idea
-	Brain::getInstance()->idea(1);
-
-	//耳朵听到了一个声音
-	Ear::getInstance()->listener(10);
+	srand((unsigned)time(NULL));
+	while (true) {
+		Ear::getInstance()->listener(rand());  // 耳朵听到了一个声音
+		Brain::getInstance()->idea(rand());  // 因此大脑产生了一个想法
+		Sleep(500);
+	}
 
 	//打印记忆
 	Memory::getInstance()->print();

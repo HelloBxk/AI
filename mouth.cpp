@@ -20,7 +20,6 @@ char *Mouth::name() {
 	return NAME;
 }
 
-int Mouth::onMessage(int value) {
+void Mouth::onMessage(int value) {
 	cout << "嘴巴接收到的值 - " << value << endl;
-	return value + 1;
 }

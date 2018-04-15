@@ -3,7 +3,7 @@
 
 class MessageListener {
 public:
-	virtual int onMessage(int value) = 0;
+	virtual void onMessage(int value) = 0;
 };
 
 #endif //_MESSAGE_

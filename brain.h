@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include "message.h"
-
+#include<fstream>
 // 神经元
 typedef struct BEURON {
 	int **input; //多个输入
@@ -16,7 +16,7 @@ public:
 	Brain();
 	~Brain();
 	char *name();
-	virtual int onMessage(int value);
+	virtual void onMessage(int value);
 
 	static Brain *getInstance();
 
